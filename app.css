@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #dedede;
+  font-size: 1.4rem;
+}
+div.wrapper {
+  width: 70%;
+  margin: 25px auto 0;
+  background-color: #fff;
+  padding: 20px;
+}
+div.wrapper > h2 {
+  text-align: center;
+  color: yellowgreen;
+  font-size: 2.4rem;
+  border: 1px dotted;
+  padding: 5px 0;
+  width: 97.5%;
+}
+form {
+  width: 100%;
+}
+h4 {
+  color: yellowgreen;
+}
+form > h4 {
+  font-size: 1.8rem;
+  color: yellowgreen;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+div.input-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  width: 100%;
+}
+div.input-box {
+  flex-direction: row;
+  width: 100%;
+}
+div.input-box > input[type='text'],
+div.input-box > input[type='email'] {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: #efefef;
+  padding: 5px;
+  width: 95%;
+  height: 40px;
+}
+div.input-box > i {
+  position: relative;
+  right: 20px;
+}
+div.input-box > .fa-envelope {
+  position: relative;
+  right: 23px;
+}
+i {
+  color: yellowgreen;
+}
+span > i {
+  color: yellowgreen;
+}
+div.input-box input[type='email'] {
+  width: 97.5%;
+}
+div.input-box > input.dob {
+  width: 30.83333333333333% !important;
+  margin-bottom: 5px;
+  height: 30px;
+  float: left;
+  margin-right: 2.5%;
+}
+div.input-box > label[for='b1'] {
+  margin-right: 40%;
+}
+div.input-box > label[for='bc1'] {
+  margin-right: 38%;
+}
+div.input-box > input[type='tel'] {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: #efefef;
+  padding: 5px;
+  width: 97%;
+  height: 40px;
+}
+div.input-box > i.fa-credit-card {
+  position: relative;
+  right: 25px;
+}
+div.input-box > select {
+  width: 45%;
+  margin-right: 2.5%;
+  font-size: 1.2rem;
+  color: #555;
+  padding: 5px;
+  height: 40px;
+}
+button {
+  padding: 5px;
+  width: 97%;
+  height: 40px;
+  background-color: yellowgreen;
+  color: white;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  margin-top: 50px;
+}
+@media (max-width: 1356px) {
+  div.input-box input[placeholder='Card CVC'] {
+    width: 95%;
+  }
+  input[placeholder='Card CVC'] + i {
+    position: relative;
+    right: 22px;
+  }
+  div.input-box > label[for='bc1'] {
+    margin-right: 35%;
+  }
+}
+@media (min-width: 954px) and (max-width: 1072px) {
+  div.input-box input[placeholder='email'] {
+    width: 97%;
+  }
+  div.input-box > i.fa-envelope {
+    position: relative;
+    right: 25px;
+  }
+}
+@media (min-width: 844px) and (max-width: 953px) {
+  div.input-box > input[type='text'] {
+    width: 92%;
+  }
+  div.input-box input[placeholder='email'] {
+    width: 96%;
+  }
+  div.input-box input[placeholder='card number'] {
+    width: 96%;
+  }
+  div.wrapper > h2 {
+    width: 96%;
+  }
+}
+@media (max-width: 843px) {
+  div.wrapper {
+    width: 60;
+  }
+  form {
+    margin-left: 5%;
+  }
+  div.wrapper > h2 {
+    width: 89%;
+    margin-left: 5%;
+  }
+  div.input-box > input[type='text'],
+  div.input-box > input[type='email'],
+  div.input-box > input[type='tel'] {
+    width: 89%;
+  }
+  div.input-group > div:first-child {
+    margin-right: -7%;
+  }
+  div.input-box > input[placeholder='Full Name'],
+  div.input-box > input[placeholder='username'] {
+    width: 79%;
+  }
+  div.input-box > input.dob {
+    width: 25% !important;
+    margin-right: 2.5%;
+  }
+  div.input-box > label[for='b1'] {
+    margin-right: 13%;
+  }
+  div.input-box > label[for='bc1'] {
+    margin-right: 27%;
+  }
+  div.input-box input[placeholder='card number'] {
+    width: 90%;
+  }
+  div.input-box input[placeholder='Card CVC'] {
+    width: 79%;
+  }
+  div.input-box > select {
+    width: 39%;
+  }
+  button {
+    width: 90%;
+  }
+}
+@media (max-width: 843px) {
+  div.input-box > label[for='b1'] {
+    margin-right: 0%;
+  }
+  div.input-box > input[name='gender'] + label {
+    font-size: 1.3rem;
+  }
+  div.input-box > label[for='bc1'] {
+    margin-right: 10%;
+  }
+  button {
+    margin-top: 50px;
+  }
+}
